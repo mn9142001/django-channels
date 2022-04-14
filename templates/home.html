@@ -15,6 +15,7 @@
     <script>
         const socket = new WebSocket('ws://localhost:5000/sad/')
         socket.onopen = () => {
+socket.send(JSON.stringify({"message":"hello world"})
         }
 
         socket.onclose = () => {
